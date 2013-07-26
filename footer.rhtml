@@ -1,0 +1,71 @@
+<script type="text/javascript">
+  jQuery(".date").each(function() {
+		var d = jQuery(this).text().split(/,? /);
+		<% if html_language == 'en' %>
+		  var month = d[0];
+			var day = d[1];
+		<% else %>
+		  var month = d[1];
+			var day = d[0];
+    <% end %>
+	});
+	jQuery("#user").prependTo("#conecte-se");
+	jQuery("#conecte-se").prepend("<a href='/account/signup'><span class='label-conect'>Inscreva-se</span></a>");
+  jQuery("#top-search").appendTo("#top-functions");
+  jQuery(".link-list-block li a").append("<span class='link-this-page-background'>&nbsp;</span>");
+</script>
+
+<div id="footer-content">
+<ul>
+  <li>
+    <strong>Blogoosfero</strong>
+    <ul>
+      <li><%= link_to 'Página Inicial', '/' %></li>
+      <li><%= link_to 'Quem Somos', '/fundacao-blogoosfero' %></li>
+      <li><%= link_to 'Termos de Uso', '/site/terms' %></li>
+      <li><%= link_to 'Netiqueta', '/ajuda/netiqueta' %></li>
+      <li><%= link_to 'Ajuda', '/ajuda' %></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Conecte-se</strong>
+    <ul id="external-sns">
+      <li class="twitter"><a href="https://twitter.com/Blogoosfero">Twitter</a></li>
+      <li class="facebook"><a href="http://www.facebook.com/fundacaoblogoosfero">Facebook</a></li>
+      <li class="identica"><a href="http://identi.ca/blogoosfero">Identi.ca</a></li>
+      <li class="youtube"><a href="http://www.youtube.com/blogoosfero">Youtube</a></li>
+    </ul>
+  </li>
+  <li>
+    <% if logged_in? %>
+    <strong><%= user.name %></strong>
+    <ul>
+      <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
+      <li><%= link_to 'Amigos',  "/myprofile/#{user.identifier}/friends" %></li>
+      <li><%= link_to 'Comunidades', "/myprofile/#{user.identifier}/memberships" %></li>
+    </ul>
+    <% else %>
+    <strong>Acesso</strong>
+    <form id="footer-login" action="/account/login" method="post">
+      <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+      <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+      <div>
+        <input type="submit" value="<%=_('Ok')%>">
+        <%= link_to _('Sign up'), '/account/signup' %>
+      </div>
+    </form>
+    <% end %>
+  </li>
+  <li>
+    <form id="footer-search" action="/search">
+      <input name="query" placeholder="<%=_('Search')%>">
+    </form>
+  </li>
+</ul>
+<div id='license-on-footer'>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR" id="footer-cc"><span>Licença Creative Commons</span></a>
+Todo o conteúdo e dados do Blogoosfero.cc estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a>, exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.
+</div>
+<%= language_chooser(environment) %>
+<p id="powered-by-noosfero">Esta rede social utiliza o software livre Noosfero, licenciado pela GNU Affero General Public License, versão 3 ou superior.</p>
+</div><!-- fim id="footer-content" -->

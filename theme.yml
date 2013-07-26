@@ -1,0 +1,4 @@
+name: "Blogoosfero"
+layout: "application-ng"
+jquery_theme: "smoothness_mod"
+icon_theme: [default, pidgin]
