@@ -1,9 +1,11 @@
 @import url(../base/style.css);
 
 body {
-  background: #F8F8F8 url(images/grade2.png);
+  background: #F8F8F8;
   color: #000;
 }
+
+
 
 /* BETA - INICIO */
 
@@ -17,7 +19,6 @@ body {
   position: absolute;
   top: -48px;
   left: -25px;
-  /*background: url(images/beta.png);*/
 }
 
 #beta span {
@@ -53,7 +54,7 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
-  border-top: 8px solid #003066; /*#564F47*/
+  border-top: 8px solid #006633; /*#564F47*/
   position: absolute;
   top: 0px;
   width: 100%;
@@ -82,7 +83,7 @@ body {
 
 #top-functions {
   float: right;
-  background: #003066;
+  background: #006633;
   -moz-border-radius: 0px 0px 7px 7px;
   border-radius: 0px 0px 7px 7px;
   /*background-image: -webkit-linear-gradient(top, #564F47, #736D64 90%);
@@ -174,7 +175,7 @@ body {
   border: 1px solid #A09890;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  padding: 7px 0px;
+  padding: 7px 0px 7px 3px;
 }
 
 #cse-search-box div,
@@ -184,7 +185,7 @@ body {
   font-size: 11px;
   display: none;
   position: absolute;
-  botton: -5px;
+  bottom: -5px;
   left: 0px;
 }
 
@@ -245,7 +246,7 @@ body {
 
 #menu-top .menu-submenu ul {
   border-top: 0px;
-  background: #003066;
+  background: #006633;
   /*background-image: -webkit-linear-gradient(bottom, #564F47, #736D64);
   background-image:    -moz-linear-gradient(bottom, #564F47, #736D64 90%);
   background-image:     -ms-linear-gradient(bottom, #564F47, #736D64);
@@ -314,7 +315,7 @@ body {
   text-align: right;
   top: 130px;
   width: 100%;
-  height: 9px;
+  height: 3px;
 }
 
 #navigation-end {
@@ -348,31 +349,31 @@ body {
 
 #content .block-title {
   border: none;
-  color: #000;
+  color: #003366;
   font-size: 14px;
   font-variant: normal;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
   padding: 0px 0px 10px 0px;
-  background: url(images/dots.png) repeat-x 0% 100%;
+  border-bottom: 1px solid #888;
 }
 
 #content .box-2 .block-title span,
 #content .box-3 .block-title span {
-  padding-left: 23px;
   line-height: 26px;
   display: block;
-  background: url(images/icons/circle-pointer.png) no-repeat 0% 50%;
 }
-#content .friends-block .block-title span,
+/*#content .friends-block .block-title span,
 #content .people-block .block-title span,
 #content .profile-list-block .block-title span {
   background: url(images/icons/persons.png) no-repeat 0% 50%;
+  padding-left: 15px;
 }
 
 #content .communities-block .block-title span {
   background: url(images/icons/gear.png) no-repeat 0% 50%;
-}
+	padding-left: 13px;
+}*/
 
 
 .login-box {
@@ -383,12 +384,17 @@ body {
 }
 
 #content .login-block h2 {
-  background: url(images/icons/ok-medium.png) no-repeat 0% 50%;
+  background: url(images/icons/persons.png) no-repeat 0% 50%;
   border: none;
   color: #000;
   font-variant: normal;
   font-weight: normal;
-  padding-left: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.login-block {
+  border-top: 1px solid #888;
 }
 
 .login-block .login-box form {
@@ -410,6 +416,13 @@ body {
   font-size: 15px;
 }
 
+.icon-menu-logout{
+  background-image: url('images/icons/exit.png');
+}
+.icon-menu-logout span{
+  padding-left: 7px;
+}
+
 #content .login-block .button {
   height: auto;
   line-height: auto;
@@ -424,7 +437,7 @@ body {
 }
 
 #content .login-block .button.with-text span {
-  padding: 0px;
+  padding: 20px;
 }
 
 #content .login-block input.button.icon-login {
@@ -494,12 +507,12 @@ body {
 
 #content .link-list-block li a {
   background-color: transparent;
-  color: #888;
+  color: #003366;
   padding: 2px 1px 2px 23px;
 }
 
 #content .link-list-block li a.link-this-page {
-  background-color: #eee;
+  background-color: #003366;;
 }
 
 #content .link-list-block li a.link-this-page:hover {
@@ -513,16 +526,16 @@ body {
 
 #content .main-block h1 {
   padding: 0px 0px 14px 0px;
-  background: url(images/dots.png) repeat-x 0% 100%;
   font-variant: normal;
   font-weight: normal;
-  border: none;
+  border-bottom: 1px solid #888;
+  color:#003366;
 }
 
 .highlighted-news-item {
   border: none;
   padding-bottom: 10px;
-  background: url(images/dots.png) repeat-x 0% 100%;
+  border-bottom: 1px solid #888;
 }
 
 #portal-news ul {
@@ -546,13 +559,10 @@ body {
 #content .news-area h3 {
   background: transparent;
   padding: 4px 0px 14px 2px;
-  background: url(images/dots.png) repeat-x 0% 100%;
 }
 
 #content .news-area h3 a {
-  color: #888;
-  background: url(images/icons/pointer-right.png) no-repeat 0% 50%;
-  padding-left: 15px;
+  color: #003366;
 }
 
 .news-area ul {
@@ -648,7 +658,7 @@ body {
 }
 
 #footer-content a {
-  color: #888;
+  color: #003366;
 }
 #footer-content a:hover {
   color: #333;
@@ -703,7 +713,7 @@ body {
   padding: 170px 48px 0;
   font-size: 11px;
   text-align: left;
-  color: #888;
+  color: #003366;
 }
 
 #footer-cc {
@@ -840,8 +850,7 @@ body {
 .action-profile-index #content .main-block h1,
 .action-profile-index #content .link-list-block li a,
 #content .main-block #article h1.title {
- /* color: #007E3A;*/
- color: #007E3A;
+ color: #336699;
 }
 
 
@@ -851,7 +860,7 @@ body {
 }
 
 body #content .highlighted-news-read-more a {
-   background: url(images/icons/icone-14.png) left center no-repeat;
+   background: url(images/icons/lista-menu.jpg) left center no-repeat;
    padding-left: 12px;
    text-transform: lowercase;
    text-decoration: underline;
@@ -859,7 +868,15 @@ body #content .highlighted-news-read-more a {
 
 .feed-reader-block li,
 .recent-documents-block li {
-  list-style-image: url("images/icons/icone-13.png");
+  list-style-image: url("images/icons/lista-menu.jpg");
+}
+
+.recent-documents-block ul {
+	padding-left: 13px;
+}
+
+#content .environment-statistics-block li {
+	list-style: square;
 }
 
 .news-area li {
@@ -885,10 +902,19 @@ body #content .highlighted-news-read-more a {
   color: #ccc;
 }
 
+/* content from UnB team*/
+
 #highlighted-news h2 a {
-  color: #003066;
+  color: #336699;
 }
 
-#content .main-block h1, #not-found h1, #access-denied h1 {
-  color: #003066;
+#article a {
+  color: #003366;
 }
+
+#content .blog-post .title a { 
+color: #003366;
+font-weight: normal;
+text-decoration: none;
+}
+
