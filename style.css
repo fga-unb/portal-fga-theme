@@ -17,7 +17,7 @@ body {
   position: absolute;
   top: -48px;
   left: -25px;
-  background: url(images/beta.png);
+  /*background: url(images/beta.png);*/
 }
 
 #beta span {
@@ -43,6 +43,7 @@ body {
   width: 343px;
   height: 72px;
   background: url(images/logo.png);
+  background-repeat: no-repeat;
 }
 
 #site-title span {
@@ -52,7 +53,7 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
-  border-top: 8px solid #564F47;
+  border-top: 8px solid #003066; /*#564F47*/
   position: absolute;
   top: 0px;
   width: 100%;
@@ -81,16 +82,20 @@ body {
 
 #top-functions {
   float: right;
-  background: #564F47;
+  background: #003066;
   -moz-border-radius: 0px 0px 7px 7px;
   border-radius: 0px 0px 7px 7px;
-  background-image: -webkit-linear-gradient(top, #564F47, #736D64 90%);
+  /*background-image: -webkit-linear-gradient(top, #564F47, #736D64 90%);
   background-image:    -moz-linear-gradient(top, #564F47, #736D64 90%);
   background-image:     -ms-linear-gradient(top, #564F47, #736D64 90%);
   background-image:      -o-linear-gradient(top, #564F47, #736D64 90%);
-  background-image:         linear-gradient(top, #564F47, #736D64 90%);
+  background-image:         linear-gradient(top, #564F47, #736D64 90%);*/
   padding: 3px 6px 0px 25px;
   white-space: nowrap;
+}
+
+#top-functions span {
+  font-weight: bold;
 }
 
 .logged-in #top-functions {
@@ -240,12 +245,12 @@ body {
 
 #menu-top .menu-submenu ul {
   border-top: 0px;
-  background: #564F47;
-  background-image: -webkit-linear-gradient(bottom, #564F47, #736D64);
+  background: #003066;
+  /*background-image: -webkit-linear-gradient(bottom, #564F47, #736D64);
   background-image:    -moz-linear-gradient(bottom, #564F47, #736D64 90%);
   background-image:     -ms-linear-gradient(bottom, #564F47, #736D64);
   background-image:      -o-linear-gradient(bottom, #564F47, #736D64);
-  background-image:         linear-gradient(bottom, #564F47, #736D64);
+  background-image:         linear-gradient(bottom, #564F47, #736D64);*/
   -moz-border-radius: 0px 0px 7px 7px;
   border-radius: 0px 0px 7px 7px;
   padding: 0px 3px 4px 0px;
@@ -297,6 +302,7 @@ body {
 #conecte-se span.label-conect {
   background-image: url(images/icons/icone-blogoosfero.png);
 }
+
 
 /* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
 
@@ -834,8 +840,10 @@ body {
 .action-profile-index #content .main-block h1,
 .action-profile-index #content .link-list-block li a,
 #content .main-block #article h1.title {
-  color: #EE7B00;
+ /* color: #007E3A;*/
+ color: #007E3A;
 }
+
 
 .action-home-index #content .main-block h1 {
    font-size: 16px;
@@ -875,4 +883,12 @@ body #content .highlighted-news-read-more a {
 
 .controller-doc a:visited {
   color: #ccc;
+}
+
+#highlighted-news h2 a {
+  color: #003066;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  color: #003066;
 }
