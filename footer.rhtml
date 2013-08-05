@@ -43,16 +43,7 @@
       <li><%= link_to 'Amigos',  "/myprofile/#{user.identifier}/friends" %></li>
       <li><%= link_to 'Comunidades', "/myprofile/#{user.identifier}/memberships" %></li>
     </ul>
-    <% else %>
-    <strong>Acesso</strong>
-    <form id="footer-login" action="/account/login" method="post">
-      <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
-      <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
-      <div>
-        <input type="submit" value="<%=_('Ok')%>">
-        <%= link_to _('Sign up'), '/account/signup' %>
-      </div>
-    </form>
+    
     <% end %>
   </li>
 </ul>

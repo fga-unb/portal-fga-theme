@@ -706,6 +706,8 @@ body {
   width: 24px;
   height: 24px;
   background: url(images/cc.png);
+  float:left;
+  margin-right: 5px;
 }
 
 #footer-cc span {
