@@ -58,20 +58,22 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
-  border-top: 8px solid #006633; /*#564F47*/
   position: absolute;
   top: 0px;
   width: 100%;
   z-index: 100;
+  height: 0px;
 }
 
+#wrap-2 #user {
+  display: none !important;
+}
 
 
 #top-functions-box {
   margin: auto;
   color: #FFF;
   font-size: 13px;
-  line-height: 24px;
 }
 
 #top-functions-box a {
@@ -85,15 +87,10 @@ body {
 #top-functions {
   float: right;
   background: #006633;
-  /*background-image: -webkit-linear-gradient(top, #564F47, #736D64 90%);
-  background-image:    -moz-linear-gradient(top, #564F47, #736D64 90%);
-  background-image:     -ms-linear-gradient(top, #564F47, #736D64 90%);
-  background-image:      -o-linear-gradient(top, #564F47, #736D64 90%);
-  background-image:         linear-gradient(top, #564F47, #736D64 90%);*/
-  padding: 3px 6px 0px 25px;
   white-space: nowrap;
   width: 100%;
   text-align: center;
+  height: 32px;
 }
 
 #top-functions span {
@@ -163,10 +160,8 @@ body {
 }
 
 #top-search{
-  position: absolute;
-  right: 33px;
-  top: 87px;
-  margin-right: 175px;
+  float: right;
+  margin-top: 74px;
 }
 
 #top-search input {
@@ -196,7 +191,7 @@ body {
 
 #menu-top {
   display:inline-block;
-  margin: 0px 0px 0px -5px;
+  margin: 8px 0px 0px -5px;
   padding: 0px;
 }
 
@@ -208,29 +203,20 @@ body {
   float: left;
   text-align: center;
   position: relative;
+  margin-right: 20px;
+}
+
+#menu-top li:last-child {
+  margin-right: 0;
 }
 
 #menu-top a {
-  border-left: 1px dotted #959491;
   display: block;
-  margin-left: 10px;
   /* line-height: 42px; */
   text-decoration: none;
+  font-weight: bold;
 }
 
-#menu-top li li a {
-  border: none;
-}
-
-#conecte-se .label-conect,
-#menu-top span {
-  padding: 0px 0px 0px 35px;
-  background-position: 10px 50%;
-  background-repeat: no-repeat;
-}
-#conecte-se .label-conect {
-  padding-left: 25px;
-}
 
 #menu-top .menu-submenu ul, #menu-top .menu-submenu li {
   float: none;
