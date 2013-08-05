@@ -760,12 +760,13 @@ body {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  background: #000;
+  background: #fff;
 }
 
 .highlights-container,
 .highlights-image-link {
   height: 275px !important;
+  border:none;
 }
 
 .highlights-block-pager {
