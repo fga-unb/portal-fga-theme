@@ -542,17 +542,7 @@ body {
 }
 
 .news-area {
-  background-image: -webkit-linear-gradient(top, #EEE, #FFF 66%, #FFF);
-  background-image:    -moz-linear-gradient(top, #EEE, #FFF 66%, #FFF);
-  background-image:     -ms-linear-gradient(top, #EEE, #FFF 66%, #FFF);
-  background-image:      -o-linear-gradient(top, #EEE, #FFF 66%, #FFF);
   background-image:         linear-gradient(top, #EEE, #FFF 66%, #FFF);
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-}
-
-.news-area-inner-1 {
-  padding: 5px 10px;
 }
 
 #content .news-area h3 {
@@ -877,6 +867,12 @@ body #content .highlighted-news-read-more a {
 .news-area li {
   list-style-image: none;
   margin-left: 0;
+}
+
+.news-area ul {
+overflow: hidden;
+height: 165px;
+padding: 0;
 }
 
 .main-block .article-body {
