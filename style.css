@@ -480,12 +480,12 @@ body {
 }
 .template-rightbar #content .box-2 .link-list-block li .link-this-page-background,
 .template-default #content .box-3 .link-list-block li .link-this-page-background { /* right */
-  background-image: url(images/selected-menu-right.png);
+  /*background-image: url(images/selected-menu-right.png);*/
   left: -17px;
 }
 .template-rightbar #content .box-2 .link-list-block li a:hover .link-this-page-background,
 .template-default #content .box-3 .link-list-block li a:hover .link-this-page-background { /* right */
-  background-image: url(images/selected-menu-right-hover.png);
+  /*background-image: url(images/selected-menu-right-hover.png);*/
   left: -17px;
 }
 
