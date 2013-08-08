@@ -27,23 +27,47 @@
     </ul>
   </li>
   <li>
-    <strong>Canais</strong>
-    <ul id="external-sns">
-      <li class="twitter"><a href="https://twitter.com/Blogoosfero">Twitter</a></li>
-      <li class="facebook"><a href="http://www.facebook.com/fundacaoblogoosfero">Facebook</a></li>
-      <li class="identica"><a href="http://identi.ca/blogoosfero">Identi.ca</a></li>
-      <li class="youtube"><a href="http://www.youtube.com/blogoosfero">Youtube</a></li>
-    </ul>
+   <div class="redesSociais">
+      <strong>Redes Sociais</strong>
+      <ul>
+        <li><a class="facebook" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="https://www.facebook.com/groups/189467721113004/">Facebook</a>
+        </li>
+        <li><a class="googleplus" target="_blank" title="Google+ UnB Gama" alt="Google+ UnB Gama" href="https://plus.google.com/u/0/104490359477931809449">Google+
+        </a></li>
+        <li><a class="twitter" target="_blank" title="Siga-nos no Twiiter" alt="Siga-nos no Twiiter" href="http://www.twitter.com/unbgama">Twitter
+        </a></li>
+        <!--<li><a class="vimeo" target="_blank" title="UnB Gama on Vimeo" alt="UnB Gama on Vimeo" href="https://vimeo.com/user13476764">Vimeo
+        </a></li>-->
+        <li><a class="linkedin" target="_blank" title="Linkedin UnB Gama" alt="Linkedin UnB Gama" href="http://lnkd.in/iYwfA6">LinkedIn
+          </a></li>
+        <!--<li><a class="flickr" target="_blank" title="UnB Gama no Flickr" alt="UnB Gama no Flickr" href="http://www.flickr.com/people/87145351@N02/">Flickr
+        </a></li>-->
+        <li><a class="feed" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" href="http://www.fga.unb.br/feed">Feed RSS
+        </a></li>
+      </ul>
+    </div>
   </li>
   <li>
     <% if logged_in? %>
-    <strong><%= user.name %></strong>
-    <ul>
-      <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
-      <li><%= link_to 'Amigos',  "/myprofile/#{user.identifier}/friends" %></li>
-      <li><%= link_to 'Comunidades', "/myprofile/#{user.identifier}/memberships" %></li>
-    </ul>
-    
+      <strong><%= user.name %></strong>
+        <ul>
+          <li>
+            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
+          </li>
+          <li>
+            <%= link_to 'Administração',  "/admin" %>
+          </li>
+          <li>
+            <%= link_to 'Sair', "/account/logout" %>
+          </li>
+        </ul>
+    <% else %>
+      <strong>Painel de Controle</strong>
+        <ul>
+          <li>
+              <%= link_to 'Entrar', "/account/login" %>
+          </li>
+        </ul>
     <% end %>
   </li>
 </ul>

@@ -4,23 +4,21 @@
 <div id="top-functions-box">
   <div id="top-functions">
     <ul id="menu-top">
-      <li><a href="#">Notícias</a></li>
-      <li><a href="#">Eventos</a></li>
+      <li><a href="#">Sobre</a></li>
       <li><a href="#">Graduação</a></li>
       <li><a href="#">Pós-Graduação</a></li>
-      <li><a href="#">Professores</a></li>
+      <li><a href="#">Informações</a></li>
       <li><a href="#">Contato</a></li>
       <% if logged_in? %>
         <li>
           <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
         </li>
+        <li>
+          <%= link_to 'Administração', "/admin" %>
+        </li>
         <li> 
           <%= link_to 'Sair', "/account/logout" %>
         </li>
-      <% else %>
-        <li>
-          <%= link_to 'Entrar', "/account/login" %>
-        <li>
       <% end %>
     </ul>
   </div>
