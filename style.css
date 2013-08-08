@@ -319,7 +319,7 @@ body {
 }
 
 #content {
-  margin-top: 182px;
+  margin-top: 166px;
 }
 
 #main-content-wrapper-1, #main-content-wrapper-2,
@@ -840,7 +840,9 @@ body {
  color: #336699;
 }
 
-
+#profile-header{
+  max-height: 217px;
+}
 .action-home-index #content .main-block h1 {
    font-size: 16px;
    font-weight: bold;
@@ -903,6 +905,10 @@ padding: 0;
 
 #article a {
   color: #003366;
+}
+
+#article-sub-header, #article-tags, #article-hits{
+  display: none;
 }
 
 #content .blog-post .title a { 
