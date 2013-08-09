@@ -409,10 +409,7 @@ body {
 }
 
 #content .login-block .button {
-  height: auto;
   line-height: auto;
-  border: none;
-  padding: 4px 5px;
   max-height: none;
   color: #651;
 }
@@ -518,6 +515,21 @@ body {
   border-bottom: 1px dotted #555753;
 }
 
+#public-profile-search, #profile-search-results form, .profile-search-block form {
+  background-color: #FFF;
+  border-radius: 0px;
+}
+
+.search-field div{
+  display: none;
+}
+.formfield input {
+  background-image: none;
+  background-color: #F3F2F1;
+  border: 1px solid #A09890;
+  padding: 3px 0px 3px 1px;
+  color: #000;
+}
 /* * * FIM Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
@@ -671,12 +683,12 @@ body {
 }
 
 #footer-login > input {
+  position: relative;
+  width: auto;
   display: block;
   margin: 10px 0px;
   padding: 5px 2px;
   border: none;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 #footer-search input {
@@ -686,8 +698,6 @@ body {
   -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 #theme-footer #language-chooser {

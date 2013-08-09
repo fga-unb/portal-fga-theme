@@ -83,4 +83,18 @@ Todo o conteúdo e dados do Portal da UnB Gama estão disponíveis sob a licenç
 <p id="powered-by-noosfero">Esta rede social utiliza o software livre Noosfero, licenciado pela GNU Affero General Public License, versão 3 ou superior.</p>
 </div><!-- fim id="footer-content" -->
 
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery("#q").val("Busca no perfil...");
+
+  jQuery("#q").click(function(){
+    jQuery(this).val("");
+  })
+  jQuery("#q").blur(function(){
+    if( jQuery("#q").val().length == 0 ) {
+      jQuery("#q").val("Busca no perfil...");
+    }
+  })
+});
+</script>
 <script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>
