@@ -20,10 +20,11 @@
     <strong>Portal UnB Gama</strong>
     <ul>
       <li><%= link_to 'Página Inicial', '/' %></li>
-      <li><a href="#">Graduação</a></li>
-      <li><a href="#">Pós-Graduação</a></li>
-      <li><a href="#">Contato</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
+      <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
+      <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
+     <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
+      <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
     </ul>
   </li>
   <li>
@@ -42,7 +43,7 @@
           </a></li>
         <!--<li><a class="flickr" target="_blank" title="UnB Gama no Flickr" alt="UnB Gama no Flickr" href="http://www.flickr.com/people/87145351@N02/">Flickr
         </a></li>-->
-        <li><a class="feed" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" href="http://www.fga.unb.br/feed">Feed RSS
+        <li><a class="feed" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" href="http://fga.unb.br/unb-gama/noticias/feed">Feed RSS
         </a></li>
       </ul>
     </div>
@@ -63,11 +64,14 @@
         </ul>
     <% else %>
       <strong>Painel de Controle</strong>
-        <ul>
-          <li>
-              <%= link_to 'Entrar', "/account/login" %>
-          </li>
-        </ul>
+        <form id="footer-login" action="/account/login" method="post">
+          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+        <div>
+          <%= submit_button( 'login', _('Log in') )%>
+          <%= button :help, _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
+        </div>
+    </form>
     <% end %>
   </li>
 </ul>
