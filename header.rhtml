@@ -9,17 +9,6 @@
       <li><a href="#">Pós-Graduação</a></li>
       <li><a href="#">Informações</a></li>
       <li><a href="#">Contato</a></li>
-      <% if logged_in? %>
-        <li>
-          <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
-        </li>
-        <li>
-          <%= link_to 'Administração', "/admin" %>
-        </li>
-        <li> 
-          <%= link_to 'Sair', "/account/logout" %>
-        </li>
-      <% end %>
     </ul>
   </div>
 </div>
