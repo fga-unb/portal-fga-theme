@@ -931,26 +931,29 @@ text-decoration: none;
 
 }
 
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon{
+div#block-200.block div.block-inner-1 div.block-inner-2 ul li a {
 	background: none;
 	border: none;
 	height: 39px;
 	padding: 0;
 	color:  transparent;
 }
+div#block-200.block div.block-inner-1 div.block-inner-2 ul li a:hover {
+	opacity: 0.5;
+}
 
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon:nth-child(1){
+div.block-inner-1 div.block-inner-2 ul li a:nth-child(1){
 	background: url("images/aeroespacial.png");
 }
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon:nth-child(2){
+div.block-inner-1 div.block-inner-2 ul li a:nth-child(2){
 	background: url("images/automotiva.png");
 }
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon:nth-child(3){
+div.block-inner-1 div.block-inner-2 ul li a:nth-child(3){
 	background: url("images/eletronica.png");
 }
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon:nth-child(4){
-	background: url("images/software.png");
+div.block-inner-1 div.block-inner-2 ul li a:nth-child(4){
+	background: url("images/energia.png");
 }
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a.icon-no-icon:nth-child(5){
-	background: url("images/aeroespacial.png");
+div.block-inner-1 div.block-inner-2 ul li a:nth-child(5){
+	background: url("images/software.png");
 }
