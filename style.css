@@ -962,3 +962,6 @@ div#block-200.block div.block-inner-1 div.block-inner-2 ul li:nth-child(5){
   background: url("images/software.png")  no-repeat 0 0 scroll;
 }
 
+#notice{
+  display: none !important;
+}
