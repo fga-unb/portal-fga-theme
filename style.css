@@ -941,5 +941,5 @@ text-decoration: none;
 }
 .menu-cursos img:hover {
   opacity: 0.5;
-  transition: opacity 0.2s linear 0s;
+  transition: opacity 0.2s ease-in-out 0s;
 }
