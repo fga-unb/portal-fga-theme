@@ -85,16 +85,27 @@ Todo o conteúdo e dados do Portal da UnB Gama estão disponíveis sob a licenç
 
 <script type="text/javascript">
 jQuery(document).ready(function(){
-  jQuery("#q").val("Busca no perfil...");
+  // Corrige borda duplicada da ultima notica em destaque
+  (function(){
+    var busca = jQuery("#highlighted-news .highlighted-news-item");
+    var nLast = busca.length-1;
 
-  jQuery("#q").click(function(){
-    jQuery(this).val("");
-  })
-  jQuery("#q").blur(function(){
-    if( jQuery("#q").val().length == 0 ) {
-      jQuery("#q").val("Busca no perfil...");
-    }
-  })
+    jQuery(busca[nLast]).css("border-bottom", "none");
+  })();
+
+  // Evento da dados do perfil do usuario
+  jQuery("#q").ready(function(){
+    jQuery("#q").val("Busca no perfil...");
+    jQuery("#q").click(function(){
+      jQuery(this).val("");
+    });
+    jQuery("#q").blur(function(){
+      if( jQuery("#q").val().length == 0 ) {
+        jQuery("#q").val("Busca no perfil...");
+      }
+    });
+  });
+  
 });
 </script>
 <script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>
