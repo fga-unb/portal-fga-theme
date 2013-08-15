@@ -930,3 +930,16 @@ text-decoration: none;
 #TB_window .button-bar {
 
 }
+
+.menu-cursos {
+    list-style: none outside none;
+    padding: 1px;
+}
+
+.menu-cursos img {
+  opacity: 1;
+}
+.menu-cursos img:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s linear 0s;
+}
