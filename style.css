@@ -943,3 +943,7 @@ text-decoration: none;
   opacity: 0.5;
   transition: opacity 0.2s ease-in-out 0s;
 }
+
+.vcard .menu-submenu, .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+  display: none;
+}
