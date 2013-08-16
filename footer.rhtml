@@ -107,5 +107,11 @@ jQuery(document).ready(function(){
   });
   
 });
+
+<% if not logged_in? %>
+// Ocultar painel de ações de "minha rede para usuários não autenticados."
+jQuery(".my-network-actions").css("display", "none");
+<% end %>
+
 </script>
 <script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>
