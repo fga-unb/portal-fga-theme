@@ -927,41 +927,23 @@ font-weight: normal;
 text-decoration: none;
 }
 
-#TB_window .button-bar {
-
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a {
-	background: none;
-	border: none;
-	height: 39px;
-	padding: 0;
-	color:  transparent;
-}
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li a:hover {
-	opacity: 0.5;
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li:first-child{
-  background: url("images/aeroespacial.png") no-repeat 0 0 scroll;
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li:nth-child(2){
-  background: url("images/automotiva.png")  no-repeat 0 0 scroll;
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li:nth-child(3){
-  background: url("images/eletronica.png")  no-repeat 0 0 scroll;
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li:nth-child(4){
-  background: url("images/energia.png")  no-repeat 0 0 scroll;
-}
-
-div#block-200.block div.block-inner-1 div.block-inner-2 ul li:nth-child(5){
-  background: url("images/software.png")  no-repeat 0 0 scroll;
-}
-
 #notice{
   display: none !important;
+}
+
+.menu-cursos {
+    list-style: none outside none;
+    padding: 1px;
+}
+
+.menu-cursos img {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+.menu-cursos img:hover {
+  opacity: 0.5;
+}
+
+.vcard .menu-submenu, .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+  display: none;
 }
