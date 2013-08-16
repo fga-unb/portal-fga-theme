@@ -545,7 +545,7 @@ body {
 
 .highlighted-news-item {
   border: none;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
   border-bottom: 1px solid #888;
 }
 
@@ -927,7 +927,9 @@ font-weight: normal;
 text-decoration: none;
 }
 
-
+#notice{
+  display: none !important;
+}
 
 .menu-cursos {
     list-style: none outside none;
@@ -936,7 +938,7 @@ text-decoration: none;
 
 .menu-cursos img {
   opacity: 1;
-  transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease 0s;
 }
 .menu-cursos img:hover {
   opacity: 0.5;
@@ -945,4 +947,3 @@ text-decoration: none;
 .vcard .menu-submenu, .common-profile-list-block .vcard:hover .menu-submenu-trigger {
   display: none;
 }
-
