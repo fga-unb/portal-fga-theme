@@ -106,12 +106,19 @@ jQuery(document).ready(function(){
     });
   });
   
+  // Oculta painel para usuarios nao autorizados
+  (function(){
+    var logado = jQuery("#usuario_logado").val();
+
+    if( logado ) jQuery(".my-network-actions").css("display", "none");
+  })();
 });
+</script>
 
 <% if not logged_in? %>
-// Ocultar painel de ações de "minha rede para usuários não autenticados."
-jQuery(".my-network-actions").css("display", "none");
+<input type="hidden" id="usuario_logado" value="Sim">
+<% else %>
+<input type="hidden" id="usuario_logado" value="Nao">
 <% end %>
-
 </script>
 <script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>
