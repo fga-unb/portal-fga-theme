@@ -115,7 +115,7 @@ jQuery(document).ready(function(){
 });
 </script>
 
-<% if not logged_in? %>
+<% if logged_in? %>
 <input type="hidden" id="usuario_logado" value="Sim">
 <% else %>
 <input type="hidden" id="usuario_logado" value="Nao">
