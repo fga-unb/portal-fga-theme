@@ -942,8 +942,4 @@ text-decoration: none;
 }
 .menu-cursos img:hover {
   opacity: 0.5;
-}
 
-.vcard .menu-submenu, .common-profile-list-block .vcard:hover .menu-submenu-trigger {
-  display: none;
-}
