@@ -55,9 +55,13 @@
           <li>
             <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
           </li>
-          <li>
-            <%= link_to 'Administração',  "/admin" %>
-          </li>
+
+          <% if user.is_admin? %>
+            <li>
+              <%= link_to 'Administração',  "/admin" %>
+            </li>
+          <% end %>
+          
           <li>
             <%= link_to 'Sair', "/account/logout" %>
           </li>
