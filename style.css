@@ -1,5 +1,4 @@
 @import url(../base/style.css);
-
 body {
   background: #F8F8F8;
   color: #000;
@@ -357,7 +356,7 @@ body {
 
 #content .communities-block .block-title span {
   background: url(images/icons/gear.png) no-repeat 0% 50%;
-	padding-left: 13px;
+  padding-left: 13px;
 }*/
 
 
@@ -871,11 +870,11 @@ body #content .highlighted-news-read-more a {
 }
 
 .recent-documents-block ul {
-	padding-left: 13px;
+  padding-left: 13px;
 }
 
 #content .environment-statistics-block li {
-	list-style: square;
+  list-style: square;
 }
 
 .news-area li {
@@ -942,4 +941,26 @@ text-decoration: none;
 }
 .menu-cursos img:hover {
   opacity: 0.5;
+}
 
+/* artigo */
+
+.article-body>h2>span>strong{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  margin: 8px 0;
+  line-height: 1.15em;
+}
+.article-body{
+  color: #444;
+  line-height: 1.9em;
+}
+
+
+.article-body>h2 {
+  background: url("images/divider.png") center top no-repeat;
+  left: 0;
+  right: 0;
+  padding-top: 14px;
+}
