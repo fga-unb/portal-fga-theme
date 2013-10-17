@@ -7,6 +7,16 @@
   color: #204A87;
 }
 
+/************************* search *****************************/
+
+#top-search{
+  float: right;
+}
+
+#top-search input{
+  width: 200px;
+}
+
 /************************** content ***************************/
 
 #content .block-title,
