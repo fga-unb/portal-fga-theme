@@ -1,10 +1,16 @@
-@import url(../profile-base/style.css);
+@import url(../unb-base/style.css);
 
 /************************** user bar ***************************/
 
 #user a,
 #user a strong {
   color: #204A87;
+}
+
+/************************* search *****************************/
+
+#top-search{
+  display: none;
 }
 
 /************************** content ***************************/
