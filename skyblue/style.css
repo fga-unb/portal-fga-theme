@@ -1,4 +1,4 @@
-@import url(../profile-base/style.css);
+@import url(../unb-base/style.css);
 
 /************************** user bar ***************************/
 
@@ -10,11 +10,7 @@
 /************************* search *****************************/
 
 #top-search{
-  float: right;
-}
-
-#top-search input{
-  width: 200px;
+  display: none;
 }
 
 /************************** content ***************************/
