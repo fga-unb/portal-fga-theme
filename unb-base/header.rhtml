@@ -1,24 +1,14 @@
 <div id="barra-brasil">
 </div>
-<div id="assets-menu">
-  <ul id="menu-top">
-      <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>    
-      <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>   
+<div id="top-functions-box">
+  <div id="top-functions">
+    <ul id="menu-top">
+      <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
+      <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
       <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
-      <li><%= link_to 'Professores',  "/professores" %></li> 
+      <li><%= link_to 'Professores',  "/professores" %></li>
      <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
       <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
-   </ul>
-</div><!-- fim id="assets-menu" -->
-<script type="text/javascript">
-  jQuery(function($) { 
-    $("#site-title, #assets-menu").mouseover(function() {    
-      clearTimeout( window.closeAssetsTimeout ); 
-      $("#assets-menu").slideDown(400);
-    });
-    $("#site-title, #assets-menu").mouseout(function() {
-      window.closeAssetsTimeout =
-      setTimeout( function() { $("#assets-menu").slideUp(400); }, 500 );
-    });
-  });
-</script>
+    </ul>
+  </div>
+</div>
