@@ -12,11 +12,14 @@ body {
 
 #wrap-1 {
   position: relative;
+  width: auto;
 }
 
 #wrap-2 {
-  margin-top: -4px;
   padding-bottom: 0px;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 #navigation,
@@ -44,8 +47,37 @@ body {
 
 /************************** content ***************************/
 
+#navigation {
+  background: url(images/dots.png);
+  right: 0;
+  text-align: right;
+  top: 162px;
+  width: 100%;
+  height: 3px;
+}
+
+#navigation-end {
+  display: none;
+}
+
+#wrap-2 {
+  margin: 20px auto 0px auto;
+  width: 941px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: none;
+}
+
 #content {
-  margin-top: 0px;
+  margin-top: 64px;
+  border-top: 2px solid #360;
+}
+
+#main-content-wrapper-1, #main-content-wrapper-2,
+#main-content-wrapper-3, #main-content-wrapper-4,
+#main-content-wrapper-5, #main-content-wrapper-6,
+#main-content-wrapper-7, #main-content-wrapper-8,
+.blog-post {
+  background: none;
 }
 
 #boxes {
@@ -106,10 +138,9 @@ body {
 }
 
 #site-title a {
-  display: block;
-  top: 0px;
-  left: 0px;
-  height: 20px;
+  display: block !important;
+  top: 55px;
+  left: 20px;
 }
 
 #assets-menu {
@@ -250,3 +281,290 @@ body {
   -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
+
+/* BETA - INICIO */
+
+#site-title {
+  overflow: visible;
+}
+
+#beta {
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  top: -48px;
+  left: -25px;
+}
+
+#beta span {
+  display: none;
+}
+
+/* BETA - FINAL */
+
+
+#site-title {
+  width: 343px;
+  height: 72px;
+  left: 25px;
+  top: -57px;
+  z-index: 100;
+}
+
+#site-title a:first-child {
+  display: block;
+  width: 343px;
+  height: 38px;
+  background: url(images/logo.png);
+  background-repeat: no-repeat;
+}
+
+#site-title a:last-child{
+  margin-top: 25px;
+}
+
+#site-title span {
+  display:
+}
+
+/* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#theme-header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  height: 0px;
+}
+
+#wrap-2 #user {
+  display: none !important;
+}
+
+
+#top-functions-box {
+  margin: auto;
+  color: #FFF;
+  font-size: 13px;
+}
+
+#top-functions-box a {
+  color: #FFF;
+}
+
+#top-functions-box a:hover {
+  text-shadow: 0 0 4px #FFF;
+}
+
+#top-functions {
+  float: right;
+  background: #006633;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  height: 32px;
+  margin-top: -20px;
+}
+
+#top-functions span {
+  font-weight: bold;
+}
+
+.logged-in #top-functions {
+  padding-left: 6px;
+}
+
+#conecte-se {
+  display:inline-block;
+  position: relative;
+  right: 0px;
+  top: -7px;
+}
+#conecte-se a {
+  text-decoration: none;
+}
+
+#conecte-se .signup,
+#conecte-se .or {
+  display: none;
+}
+
+#user {
+  display: inline-block;
+  position: static;
+  color: rgba(255,255,255,0.4);
+  border-left: 1px dotted #959491;
+  padding-left: 6px;
+  margin-left: 11px;
+}
+
+.logged-in #user {
+  border-left: none;
+  padding-left: 0;
+}
+
+.logged-in .label-conect {
+  display: none;
+}
+
+#user a {
+  text-decoration: none;
+}
+
+#user .not-logged-in a {
+  background: url(images/icons/ok-smal.png) no-repeat 0% 50%;
+  padding-left: 15px;
+  margin: 0px 3px;
+}
+
+#user .not-logged-in a i {
+  display: none;
+}
+
+#user a strong {
+  color: #D8D4D0;
+}
+#user a:hover strong {
+  color: #FFF;
+}
+
+#user form div {
+  display: none;
+}
+
+#top-search{
+  float: right;
+  margin-top: 74px;
+}
+
+#top-search input {
+  background: #F3F2F1;
+  border: 1px solid #A09890;
+  padding: 7px 0px 7px 3px;
+  width: 186px;
+}
+
+#top-search div{
+  display: none;
+}
+
+#top-search:hover div{
+  display: block;
+}
+
+#top-search div {
+  color: #000;
+  background: #FFF;
+  font-size: 11px;
+  position: relative;
+  display: none;
+  bottom: -5px;
+  left: 0px;
+}
+
+#menu-top {
+  display:inline-block;
+  margin: 8px 0px 0px -5px;
+  padding: 0px;
+}
+
+#menu-top li {
+  list-style: none;
+  display: block;
+  height: auto;
+  /* width: 125px; */
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+#menu-top li:last-child {
+  margin-right: 0;
+}
+
+#menu-top a {
+  display: block;
+  /* line-height: 42px; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#menu-top .menu-submenu ul, #menu-top .menu-submenu li {
+  float: none;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#menu-top .menu-submenu {
+  bottom: -75px;
+  width: auto;
+  min-width: 100%;
+  top: 32px;
+  right: -10px;
+  position: absolute;
+}
+
+#menu-top .menu-submenu ul {
+  border-top: 0px;
+  background: #006633;
+  /*background-image: -webkit-linear-gradient(bottom, #564F47, #736D64);
+  background-image:    -moz-linear-gradient(bottom, #564F47, #736D64 90%);
+  background-image:     -ms-linear-gradient(bottom, #564F47, #736D64);
+  background-image:      -o-linear-gradient(bottom, #564F47, #736D64);
+  background-image:         linear-gradient(bottom, #564F47, #736D64);*/
+  padding: 0px 3px 4px 0px;
+  height: auto;
+  display: block;
+}
+
+#menu-top .menu-submenu a {
+  padding: 4px 5px;
+  font-size: 11px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+#menu-top .menu-submenu-trigger {
+  background: #B8B4B0 url(/images/down-arrow.png) center center no-repeat;
+  opacity: 0.5;
+  display: none;
+  height: 11px;
+  top: 21px;
+  left: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+#menu-top li:hover .menu-submenu-trigger:hover {
+  background: #FFF url(/images/down-arrow.png) center center no-repeat;
+  border: none;
+}
+
+#menu-top li:hover .menu-submenu-trigger {
+  display: block;
+}
+
+#menu-top .menu-submenu-header, #menu-top .menu-submenu-footer, #menu-top .menu-submenu h4 {
+  display: none;
+}
+
+#menu-top span.icon-menu-people {
+  background-image: url(images/icons/persons.png);
+}
+#menu-top span.icon-menu-community {
+  background-image: url(images/icons/gear.png);
+}
+#menu-top #submenu-contents span {
+  background-image: url(images/icons/icone-08.png);
+}
+#conecte-se span.label-conect {
+  display: none;
+  background-image: url(images/icons/icone-blogoosfero.png);
+}
+
+
+/* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
