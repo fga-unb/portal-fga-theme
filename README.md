@@ -1,5 +1,4 @@
 Portal FGA
-rtal FGA
 ================
 Temas Noosfero para o Portal FGA.
 
@@ -30,7 +29,8 @@ ln -s portal-fga-theme/scarletred/ scarletred &&
 ln -s portal-fga-theme/unb-base/ unb-base &&
 ln -s portal-fga-theme/unb-gama/ unb-gama &&
 ln -s portal-fga-theme/noosfero/ noosfero &&
-ln -s portal-fga-theme/unb-gama/ default
+ln -s portal-fga-theme/comunidade-unb-theme/ comunidade-unb-theme &&
+ln -s portal-fga-theme/unb-gama/ default 
 ```
 
 
