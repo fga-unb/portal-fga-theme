@@ -1,0 +1,9 @@
+<script>
+  jQuery('#user').prependTo('#top-functions');
+  //jQuery('.admin-link strong').text('Adm');
+
+  var usrSubMenu = jQuery('<div class="usr-menu-submenu"></div>').appendTo('#user .logged-in')[0];
+  usrSubMenu = jQuery('<div class="menu-submenu-content"></div>').appendTo(usrSubMenu);
+  usrSubMenu = jQuery('<div class="menu-submenu-list"></div>').appendTo(usrSubMenu);
+  jQuery('#user .logged-in a[id!=homepage-link]').appendTo(usrSubMenu);
+</script>

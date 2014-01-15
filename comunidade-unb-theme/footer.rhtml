@@ -1,0 +1,60 @@
+<script>
+  // Identificar Blocos de links com e sem título:
+  // TODO: Colocar isso no core do noosfero para qualquer bloco.
+  jQuery('.link-list-block').each(function(num, el) {
+    title = jQuery('.block-title', el).text().trim();
+    el.className += (title=='')? ' without-title' : ' with-title';
+  });
+
+  // Identificar cabeçalho e rodabe vazios:
+  // TODO: Colocar isso no core do noosfero.
+  jQuery('#profile-header, #profile-footer').each(function(num, el) {
+    if ( jQuery(el).html().trim() == '' ) el.className += ' empty';
+  });
+
+  // busca
+  jQuery("#top-search").prependTo("#wrap-2");
+</script>
+
+<div id="footer-border">
+<div id="footer-box">
+<div id="footer-content">
+
+<a href="http://unb.br" id="unb"><span>Universidade de Brasília</span></a>
+
+<ul id="footer-menu">
+  <li>Conheça
+    <ul>
+      <li><a href="/portal/quem-somos">Quem Somos</a></li>
+      <li><a href="/portal/termo-de-uso">Termos de Uso</a></li>
+      <li><a href="/doc">Documentação</a></li>
+      <li><a href="/contact/portal/new">Fale Conosco</a></li>
+    </ul>
+  </li>
+    <li>Colabore
+    <ul>
+      <li><a href="/myprofile/portal/cms/suggest_an_article">Sugerir uma Notícia</a></li>
+      <li><a href="/colabore/sugerir-melhorias">Sugerir Melhorias</a></li>
+      <li><a href="/colabore/reporte-um-bug">Reportar um Bug</a></li>
+      <li><a href="/desenvolvimento">Desenvolvimento</a></li>
+    </ul>
+  </li>
+
+
+</ul><!-- id="footer-menu" -->
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+
+<div id="copyright">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR" id="license"><span>Creative Commons License</span></a><br />Todo o conteúdo e dados da Comunidade UnB estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a> exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.</p>
+
+  <p id="dev-info"><a href="http://www.gnu.org/licenses/agpl.html"><img alt="AGPL License" style="border-width:0" src="http://www.gnu.org/graphics/agplv3-88x31.png" /></a><br/><%= _('This site uses <a href="http://noosfero.org/">Noosfero</a>, developed by %s and licensed under the <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> version 3 or any later version.') % link_to('Colivre', 'http://colivre.coop.br/') %>
+  </p>
+
+
+</div><!-- id="copyright" -->
+
+</div><!-- id="footer-content" -->
+</div><!-- id="footer-box" -->
+</div><!-- id="footer-border" -->
+
+<script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>

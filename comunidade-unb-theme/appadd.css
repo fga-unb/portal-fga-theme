@@ -1,0 +1,64 @@
+.block-target {
+  padding: 2px;
+  background: #ffd;
+  margin-bottom: 5px;
+}
+.block-target-hover {
+  background: #ffd;
+  border: 1px solid #000;
+  height: 30px;
+  box-shadow: 0 0 15px #888 inset;
+}
+#box-organizer .block {
+  cursor: move;
+}
+#box-organizer .block:hover {
+    box-shadow: 0px 0px 0px 2px #FFF,
+                0px 0px 0px 2px #FFF,
+                0px 0px 10px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+#box-organizer .block {
+  cursor: move;
+  position: relative;
+  min-height: 20px;
+}
+
+#box-organizer .block .button-bar {
+  cursor: move;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  top: -40px;
+  padding-bottom: 40px;
+  display: none;
+}
+#box-organizer .block:focus .button-bar,
+#box-organizer .block:hover .button-bar {
+  display: block;
+}
+#box-organizer .main-block {
+  font-size: 24px;
+  box-shadow: none;
+  outline: none;
+  display: block;
+  height: 150px;
+  line-height: 120px;
+}
+#box-organizer .main-block:hover {
+    border: 0px;
+    border-style: none;
+    box-shadow: none;
+    outline: none;
+}
+#box-organizer .feed-reader-block,
+#box-organizer .article-block,
+#box-organizer .recent-documents-block {
+  overflow: visible !important;
+}
+
+#box-organizer .blog-post {
+  margin: auto;
+}
