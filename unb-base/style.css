@@ -729,6 +729,15 @@ body {
   text-align: center;
 }
 
+#footer-login > input {
+  position: relative;
+  width: 175px;
+  display: block;
+  margin: 10px 0px;
+  padding: 5px 2px;
+  border: none;
+}
+
 #unb span{
   background: url(images/logo-unb-footer.png) top left no-repeat;
   color: transparent;

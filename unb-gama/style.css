@@ -682,15 +682,6 @@ body {
   background-image: url(images/icons/icon-identica.png);
 }
 
-#footer-login > input {
-  position: relative;
-  width: 175px;
-  display: block;
-  margin: 10px 0px;
-  padding: 5px 2px;
-  border: none;
-}
-
 #footer-search input {
   width: 100%;
   padding: 5px 2px;
@@ -705,20 +696,6 @@ body {
   margin-top: 1.5em;
 }
 
-#unb span{
-  background: url(images/logo-unb-footer.png) top left no-repeat;
-  color: transparent;
-  display: block;
-  float: left;
-  height: 100px;
-  margin: 5px;
-  opacity: 0.7;
-  width: 100px;
-}
-
-#unb span:hover{
-  opacity: 1;
-}
 
 #license-on-footer {
   padding: 170px 48px 0;
