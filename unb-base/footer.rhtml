@@ -54,7 +54,7 @@
   </li>
   <li>
     <% if logged_in? %>
-      <strong><%= user.name %></strong>
+      <strong class="user-name"><%= user.name %></strong>
         <ul>
           <li>
             <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
