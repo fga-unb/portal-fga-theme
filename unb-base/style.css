@@ -16,6 +16,10 @@ body {
   overflow: visible;
 }
 
+#site-title a:last-child{
+  display: none;
+}
+
 #beta {
   width: 98px;
   height: 98px;
@@ -35,6 +39,11 @@ body {
   position: relative;
 }
 
+#content-inner {
+  border-top: 3px solid #006633;
+  padding-top: 20px;
+}
+
 #site-title {
   width: 343px;
   height: 72px;
@@ -47,12 +56,12 @@ body {
   display: block;
   width: 343px;
   height: 72px;
-  background: url(images/logo.png);
+  background: url(../unb-gama/images/logo.png);
   background-repeat: no-repeat;
 }
 
 #site-title span {
-  display:
+  display: block;
 }
 
 .button {
