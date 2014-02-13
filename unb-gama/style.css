@@ -299,12 +299,7 @@ body {
 
 /* o bloco navigation será degenerado para um simples separador */
 #navigation {
-  background: url(images/dots.png);
-  right: 0;
-  text-align: right;
-  top: 162px;
-  width: 100%;
-  height: 3px;
+  background: none;
 }
 
 #navigation-end {
