@@ -1,7 +1,1 @@
 <a href="/"><span>Portal UnB Gama</span></a>
-
-<% if File.exists?(File.join(Rails.root, 'public', "/designs/themes/#{environment.theme}/images/thin-logo.png")) %>
-  <%= link_to(image_tag("/designs/themes/#{environment.theme}/images/thin-logo.png"), environment.top_url) %>
-<% else %>
-  <%= link_to(image_tag("/designs/themes/noosfero/images/thin-logo.png"), environment.top_url) %>
-<% end %>
