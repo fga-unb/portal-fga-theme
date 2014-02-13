@@ -55,6 +55,50 @@ body {
   display:
 }
 
+.button {
+  display: inline-block;
+  background-color: #FFF !important;
+  margin-bottom: 0 !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  cursor: pointer;
+  white-space: nowrap !important;
+  padding: 6px 6px 6px 21px !important;
+  font-size: 14px !important;
+  line-height: 1.428571429 !important;
+  border-radius: 4px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC
+}
+
+.button:hover {
+  color: #333 !important;
+  background-color: #EBEBEB !important;
+  border-color: #ADADAD !important;
+}
+
+.icon-upload-file {
+  color: #468847 !important;
+  background-color: #DFF0D8 !important;
+  border: 1px solid #D6E9C6 !important;
+}
+
+#article-actions a.button, #article-actions a.button:hover{
+  border: 1px solid !important;
+}
+
+input[type="submit"]{
+  max-height: none !important;
+  height: 34px !important;
+}
+
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
