@@ -35,29 +35,8 @@ body {
   position: relative;
 }
 
-#content-inner {
-  border-top: 3px solid #006633;
-  padding-top: 20px;
-}
-
-#site-title {
-  width: 343px;
-  height: 72px;
-  left: 25px;
-  top: 70px;
-}
-
-#site-title a {
-  position: static;
-  display: block;
-  width: 343px;
-  height: 72px;
-  background: url(../unb-gama/images/logo.png);
-  background-repeat: no-repeat;
-}
-
-#site-title span {
-  display: block;
+#content {
+  margin-top: 30px;
 }
 
 .button {
@@ -208,34 +187,8 @@ input[type="submit"]{
   display: none;
 }
 
-#top-search{
-  float: right;
-  margin-top: 74px;
-}
-
-#top-search input {
-  background: #F3F2F1;
-  border: 1px solid #A09890;
-  padding: 7px 0px 7px 3px;
-  width: 186px;
-}
-
-#top-search div{
+#top-search, #site-title{
   display: none;
-}
-
-#top-search:hover div{
-  display: block;
-}
-
-#top-search div {
-  color: #000;
-  background: #FFF;
-  font-size: 11px;
-  position: relative;
-  display: none;
-  bottom: -5px;
-  left: 0px;
 }
 
 #menu-top {
@@ -365,10 +318,6 @@ input[type="submit"]{
   width: 941px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border: none;
-}
-
-#content {
-  margin-top: 166px;
 }
 
 #main-content-wrapper-1, #main-content-wrapper-2,
