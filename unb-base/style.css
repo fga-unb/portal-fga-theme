@@ -187,10 +187,6 @@ input[type="submit"]{
   display: none;
 }
 
-#top-search, #site-title{
-  display: none;
-}
-
 #menu-top {
   display:inline-block;
   margin: 8px 0px 0px -5px;
