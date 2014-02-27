@@ -957,15 +957,6 @@ font-weight: normal;
 text-decoration: none;
 }
 
-#notice{
-  display: none !important;
-}
-
-.menu-cursos {
-    list-style: none outside none;
-    padding: 1px;
-}
-
 .menu-cursos img {
   opacity: 1;
   transition: opacity 0.2s ease 0s;

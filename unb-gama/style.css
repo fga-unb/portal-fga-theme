@@ -915,10 +915,6 @@ font-weight: normal;
 text-decoration: none;
 }
 
-#notice{
-  display: none !important;
-}
-
 .menu-cursos {
     list-style: none outside none;
     padding: 1px;
