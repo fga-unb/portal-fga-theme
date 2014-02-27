@@ -524,6 +524,15 @@ input[type="submit"]{
   padding: 3px 0px 3px 1px;
   color: #000;
 }
+
+#top-search{
+  display: none;
+}
+
+#site-title{
+  display: none;
+}
+
 /* * * FIM Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 

@@ -999,6 +999,14 @@ text-decoration: none;
   display: none;
 }
 
+#site-title{
+  display: inline-block;
+}
+
+#top-search{
+  display: inline-block;
+}
+
 #top-search:hover div{
   display: block;
 }
