@@ -1,0 +1,4 @@
+name: "Comunidade 2.0"
+layout: "application-ng"
+jquery_theme: "smoothness_mod"
+icon_theme: [default, pidgin]

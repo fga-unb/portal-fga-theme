@@ -1,0 +1,269 @@
+#top-search {
+  top: 11px;
+}
+
+#navigation li {
+  padding-top: 1px;
+}
+
+#navigation li a.menu-submenu-trigger,
+#navigation .menu-submenu {
+  position: absolute;
+  padding: 0px;
+  width: 130px;
+  top: 40px;
+  left: auto;
+  right: -30px;
+  border: none;
+}
+
+.lt1100 #navigation li {
+  width: auto;
+}
+.lt1100 #navigation a {
+  padding: 0 15px;
+}
+.lt1050 #navigation a {
+  padding: 0 10px;
+}
+
+
+.action-home-index #theme-header {
+  width: auto;
+  top: 4px;
+  z-index: 20;
+  margin: 0px;
+  left: 15%;
+}
+.lt1100.action-home-index #theme-header {
+  left: 18%;
+}
+
+.lt1050.action-home-index #theme-header a {
+  background: #6D0;
+  box-shadow: inset 0 0 20px #380;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 0 0 2px #370;
+  width: auto;
+  padding: 0 10px;
+}
+.lt1050.action-home-index #theme-header a span {
+  display: inline;
+  font-size: 11px;
+  line-height: 37px;
+}
+
+.lt900.action-home-index #theme-header {
+  display: none;
+}
+
+.action-home-index #theme-header a {
+  height: 37px;
+  position: static;
+}
+
+#wrap-1 {
+  min-width: 800px;
+  max-width: none;
+  background: transparent;
+}
+
+#wrap-2 {
+  width: auto;
+  padding: 0px;
+}
+
+.action-home-index #content {
+  box-shadow: none;
+  background: transparent;
+  padding: 45px 0px 0px 0px;
+  margin: 0px;
+}
+
+#theme-footer {
+  background: #666;
+}
+
+.box-2, .box-3 {
+  display: none;
+}
+
+.box-1 {
+  margin: 0px;
+}
+
+#content .highlights-block {
+  background: #06B url(images/front/quadricula.png) repeat-x 0% 100%;
+  height: 380px !important;
+  padding: 20px 0 65px;
+}
+
+.highlights-container, .highlights-image-link {
+  width: 800px !important;
+  height: 380px !important;
+  margin: auto;
+}
+
+.highlights-label {
+  background: rgba(0,0,0,0.5);
+  color: #FFF;
+  font-size: 30px;
+  line-height: 60px;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+#content .people-block {
+  background: #555;
+  height: 180px;
+  padding: 2px;
+}
+
+.people-block .block-inner-1 {
+  width: 896px;
+  margin: auto;
+}
+
+.people-block .block-title, .people-block .block-footer-content {
+  display: none;
+}
+
+#content .people-block ul {
+  margin: 0px 0px 0px -4px;
+}
+
+#content .people-block .vcard a.profile_link, #content .profile-list-block .vcard a.profile_link, #content .enterprises-block .vcard a.profile_link, #content .members-block .vcard a.profile_link, #content .communities-block .vcard a.profile_link, #content .friends-block .vcard a.profile_link {
+  width: 86px;
+  height: 86px;
+  padding: 1px;
+}
+
+.box-1 .common-profile-list-block span {
+  width: 86px;
+  height: 86px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.common-profile-list-block img {
+  display: none;
+}
+
+.common-profile-list-block .menu-submenu {
+  bottom: 75px;
+}
+
+
+#busca-pess, #busca-coop, #login-box {
+  width: 700px;
+  margin: 20px auto;
+  padding: 10px 50px 20px 50px;
+  background: #07C;
+  border-radius: 30px;
+  font-size: 22px;
+  line-height: 40px;
+  color: #FFF;
+  position: relative;
+  text-align: left;
+}
+
+#busca-coop {
+  background: #0A0;
+}
+
+#busca-pess input, #busca-coop input, #login-box input {
+  width: 680px;
+  padding: 0 0 3px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+#login-box {
+  background: #FD0;
+  color: #000;
+  font-size: 17px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+.login-block {
+  min-height: 0;
+}
+
+#login-box label {
+  display: inline-block;
+}
+
+#login-field {
+  width: 250px;
+}
+#login-field input {
+  width: 210px;
+}
+
+#senha-field {
+  width: 150px;
+}
+#senha-field input {
+  width: 110px;
+}
+
+#login-box .submit {
+  width: 80px;
+  padding: 0;
+  text-align: center;
+  border: 2px solid #FFF;
+}
+
+#quero-participar, #forgot-pass {
+  position: absolute;
+  left: 580px;
+  top: 50px;
+  font-size: 15px;
+}
+#quero-participar {
+  top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#login-box a {
+  color: #000;
+  text-decoration: none;
+}
+#login-box a:hover {
+  text-decoration: underline;
+}
+
+
+#content .news-area {
+  float: none;
+  margin: auto;
+  background: transparent;
+  font-size: 15px;
+}
+
+#content .news-area h3 {
+  display: none;
+}
+
+.news-area ul {
+  border: none;
+  height: auto;
+  background: transparent;
+}
+
+#content .news-area a.news-see-more {
+  position: static;
+}
+
+
+#theme-footer {
+  margin: 0px;
+}
+
+#footer-inner {
+  background: url(images/front/logo-ola-footer.png) no-repeat 5% 50%;
+}

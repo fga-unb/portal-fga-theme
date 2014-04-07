@@ -1,0 +1,60 @@
+<div id="footer">
+  <div id="footer-inner">
+	<a href="http://unb.br" id="unb"><span>Universidade de Brasília</span></a>
+	<ul id="footer-menu">
+	  <li>Conheça
+	    <ul>
+	      <li><a href="/portal/quem-somos">Quem Somos</a></li>
+	      <li><a href="/portal/termo-de-uso">Termos de Uso</a></li>
+	      <li><a href="/doc">Documentação</a></li>
+	      <li><a href="/contact/portal/new">Fale Conosco</a></li>
+	    </ul>
+	  </li>
+	  <li>Colabore
+	    <ul>
+	      <li><a href="/myprofile/portal/cms/suggest_an_article">Sugerir uma Notícia</a></li>
+	      <li><a href="/colabore/sugerir-melhorias">Sugerir Melhorias</a></li>
+	      <li><a href="/colabore/reporte-um-bug">Reportar um Bug</a></li>
+	      <li><a href="/desenvolvimento">Desenvolvimento</a></li>
+	    </ul>
+	  </li>
+	</ul>
+	</div>
+	<div id="copyright">
+	    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR" id="license"><span>Creative Commons License</span></a><br />Todo o conteúdo e dados da Comunidade UnB estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a> exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.</p>
+
+	  <p id="dev-info"><a href="http://www.gnu.org/licenses/agpl.html"><img alt="AGPL License" style="border-width:0" src="http://www.gnu.org/graphics/agplv3-88x31.png" /></a><br/><%= _('This site uses <a href="http://noosfero.org/">Noosfero</a>, developed by %s and licensed under the <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> version 3 or any later version.') % link_to('Colivre', 'http://colivre.coop.br/') %>
+	  </p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+(function($) {
+  var timer;
+  function fixProfileBlockMenus() {
+    if ($('.profile-info-data li').length && $('.profile-info-options li').length) {
+      $('.profile-info-options a').removeClass();
+      $('.profile-info-options li').each(function() {
+        $('ul.profile-info-data').append($(this));
+      });
+      clearInterval(timer);
+    }
+  }
+  if ($('.profile-info-block').length) timer = setInterval(fixProfileBlockMenus, 1000);
+  $('#homepage-link strong').append($('#pending-tasks-count'));
+}(jQuery));
+</script>
+
+<script type="text/javascript">
+(function($) {
+  $('.login').wrap('<li class="navigation-login" />');
+  $('.navigation-login').prependTo('#navigation ul');
+  $('.signup').wrap('<li class="navigation-signup" />');
+  $('.navigation-signup').prependTo('#navigation ul');
+  $('#top-search').prependTo('#wrap-2');
+  $('#top-search').clone().attr('id', 'bottom-search').prependTo('#footer-search');
+}(jQuery));
+</script>
+
+<script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>
