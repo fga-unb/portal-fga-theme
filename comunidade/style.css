@@ -38,7 +38,6 @@ body {
 
 #wrap-1 {
   width: 100%;
-  max-width: 1304px;
   background: #fff url(images/bg1.png) left top repeat-x;
 }
 
@@ -296,13 +295,6 @@ span.logged-in a:hover {
 
 #theme-header a span {
   display: none;
-}
-
-.logged-in #site-title,
-.logged-in #user,
-.logged-in #navigation,
-.logged-in #top-search {
-  position: fixed;
 }
 
 /* Content */
@@ -821,4 +813,8 @@ span.logged-in a:hover {
 #pagination-profiles .pagination span.current {
   color: #000;
   background: transparent;
+}
+
+#content .people-block ul, #content .profile-list-block ul, #content .enterprises-block ul, #content .members-block ul, #content .communities-block ul, #content .friends-block ul, #content .fans-block ul {
+  width: 960px;
 }
