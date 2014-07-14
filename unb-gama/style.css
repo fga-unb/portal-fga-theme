@@ -1020,3 +1020,15 @@ text-decoration: none;
   bottom: -5px;
   left: 0px;
 }
+
+.members-buttons-cell{
+  width: 100% !important;
+}
+
+table.cms-articles th:nth-child(2){
+  width: 12%;
+}
+
+table.cms-articles th:nth-child(3){
+  width: 38%;
+}
